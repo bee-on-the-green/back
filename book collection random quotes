@@ -1,0 +1,49 @@
+GOAL:
+
+Everything has to be in bash
+Get a pop up on a secondary screen with random line from a large book collection.
+It has to look like a sceensaver (like in a text editor in full screen mode)
+The user should be able to chose a word (like the hero of a novel) and get relevant lines, in a random way
+The refresh rate of the pop up can be chosen by the user
+The option proposed to the user should be as comprehensive as possible (eg. 2 key words, dialogue or not, duration of each refresh cycle)
+This is the fun aspect, but the script must allow comprehensive search within any large file (for reserach purposes)
+IMPORTANT: this little program must be easy to use by anybody.
+
+ULTIMATE GOAL : doing the same thing with VLC or other programs (key word then relevant short clip of a movie, key word then relevant Youtube clips, photo
+of a person then popups with photos of that person, etc. Maybe, if possibe, making the whole thing a real screen saver, even  if there is a lag.
+
+
+STEPS: 
+
+1.Convert all .epub/pdf/doc file to a text file (with Calibre,but that would better to do it in the script itself (as the user should be able to turn up
+whith her/his ereader, that's it. No other requirement; Things have to be easy.
+
+2.Change the titles to get rid of blank spaces and all things that might create problems, as there will be a "cat" stage, and the computer might get 
+confused.
+
+3.put the title of each file in the first line of each text file (with a tag to easilly find the begining of the book (with "sed"). This sound useless
+but it will be relevant at the next stage.
+
+4.put all the text file in a single gigantic text file (with "cat") that's optional but useful for the research aspect of the project, that is, being able to find something
+very specific things in a file containing 1 million words). 
+
+4.Interactive part, using "echo" and "read" to later being able to use the needed r(with "cat")egular expression using "grep", all of this in a loop.
+
+  *read "option" such as -n -i etc
+  *read "regular expression" with easy to understand instructions thanks to "echo"
+  *read the "name_of_the_file"  for users who want to use a particular book
+  * read "duration_of_the_cycle"
+  * in the script, the most important line would be something like: grep "$option" "$regular_expression" "$file" > file.txt
+  * chosing a line in file.txt with "shuf" and create a new file
+  *run the new file with a text editor that highlight quotation marks and parenthesis
+  * sleep "$duration_of_the_cycle"
+  * kill the text editor.
+  * start over automatically
+  
+  COOL THINGS THAT COULD ADDED, IF POSSIBLE.
+  
+    * do the same program (or similar) and have the chosen file displayed as well, but on another part of the screen with another text editor.
+    * reccord the screen and have it play in VLC (does not matter if their is a lag)
+    * if possible, create a real screen saver with all of that.
+    * if possible, using an "AI" type of program, a program that would choose lines that are related with the regex.
+  
