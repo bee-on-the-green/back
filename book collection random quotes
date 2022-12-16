@@ -1,4 +1,4 @@
-GOAL:
+GOAL (for FUN) : display random quotes chosen from a key word.
 
 Everything has to be in bash
 Get a pop up on a secondary screen with random line from a large book collection.
@@ -9,7 +9,7 @@ The option proposed to the user should be as comprehensive as possible (eg. 2 ke
 This is the fun aspect, but the script must allow comprehensive search within any large file (for reserach purposes)
 IMPORTANT: this little program must be easy to use by anybody.
 
-ULTIMATE GOAL : doing the same thing with VLC or other programs (key word then relevant short clip of a movie, key word then relevant Youtube clips, photo
+ULTIMATE GOAL (for FUN) : doing the same thing with VLC or other programs (key word then relevant short clip of a movie, key word then relevant Youtube clips, photo
 of a person then popups with photos of that person, etc. Maybe, if possibe, making the whole thing a real screen saver, even  if there is a lag.
 
 
@@ -39,11 +39,13 @@ very specific things in a file containing 1 million words).
   * sleep "$duration_of_the_cycle"
   * kill the text editor.
   * start over automatically
-  
+  REAL GOAL
   COOL THINGS THAT COULD ADDED, IF POSSIBLE.
   
     * do the same program (or similar) and have the chosen file displayed as well, but on another part of the screen with another text editor.
     * reccord the screen and have it play in VLC (does not matter if their is a lag)
     * if possible, create a real screen saver with all of that.
-    * if possible, using an "AI" type of program, a program that would choose lines that are related with the regex.
+    
+  
+  REAL GOAL: Using an "AI" type of program, a program that would find data are related with the regex.
   
