@@ -39,7 +39,7 @@ very specific things in a file containing 1 million words).
   * sleep "$duration_of_the_cycle"
   * kill the text editor.
   * start over automatically
-  REAL GOAL
+  
   COOL THINGS THAT COULD ADDED, IF POSSIBLE.
   
     * do the same program (or similar) and have the chosen file displayed as well, but on another part of the screen with another text editor.
