@@ -8,7 +8,7 @@ I would use myself as a guinea pig, with all the data I can gather. It would the
 
 The user of the program should have the possibility to ask questions (whether general or very specific), and get relevant answers.
 
-At some point, a program able to find 'related content' to various keywords will have to be included, as programs such as Grep are not capable of doing it (at least as far as I know). I am sure there are such things out there, but implementing the whole thing must be difficult for sure (the program would need to be capable of cross referencing data, etc.).
+At some point, a program able to find 'related content' to various keywords will have to be included, as programs such as Grep are not capable of doing it (at least as far as I know). I am sure there are such things out there, but implementing the whole thing must be difficult for sure. The program would need to be capable of cross referencing data, associate name to email addresses, detect correlation between peopel and events...)
 
 Also, there would be a fun apect to this project: the computer's 'findings' would be displayed as short 'pop-ups' on a secondary screen, a little bit like a screensaver (short video clips, bits of emails/whatsapp, Internet pages, etc.). For example, YouTube pages that have never been visited, like the real thing.
 
